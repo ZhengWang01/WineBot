@@ -42,4 +42,4 @@
 #  queue: queue
 
 action_endpoint:
-  url: http://app:5055/webhook
+  url: http://action_server:5055/webhook
