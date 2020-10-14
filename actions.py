@@ -12,7 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-from src.information_retrieval_model import Wine_Information_Retrieval_Model as wir
+# from src.information_retrieval_model import Wine_Information_Retrieval_Model as wir
 
 import pandas as pd
 import numpy as np
