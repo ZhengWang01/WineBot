@@ -2,6 +2,7 @@
 Your personal assistant in finding the optimum wine.
 
 # Table of Contents
+This is a wine recommendation chatbot for specific business use that translate taxonomy data into an interactive dialog.
 1. [Motivations](README.md#motivations)
 2. [Overview of the Project](README.md#overview-of-the-project)
 3. [Repo Structure](README.md#repo-structure)
@@ -10,7 +11,6 @@ Your personal assistant in finding the optimum wine.
 6. [Run A Train and Test](README.md#run-a-train-and-test)
 10. [Details of the Implementation](README.md#details-of-the-implementation)
 
- This is a wine recommendation chatbot for specific business use that translate taxonomy data into an interactive dialog.
 
 To check-out the repo:
 
