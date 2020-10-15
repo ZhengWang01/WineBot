@@ -24,7 +24,7 @@ According to an on-line survey, 44% of U.S. consumers prefer chat-bots to humans
 
 ## Overview of the Project
 
-In this project, I trained Latent Sentiment Analysis models that takes the processed inputs from customer input, and give corresponding recommendation based on what the customer need.
+In this project, I utilized the Rasa open source chatbot. I trained Latent Sentiment Analysis models that takes the preprocessed customer query, and give corresponding recommendation based on what the customer need.
 
 The deliverable of the project is a Web App that allows user to tell the chatbot what they need, and get the recommendation on which wine they should buy.
 
@@ -109,11 +109,21 @@ pip3 install -r requirements.txt
 
 The example code of how to train and check the results can be found in the Jupyter notebooks train_model.ipynb and run_model.ipynb.
 
-To run the Rasa Chatbot in terminal, run:
+Choice #1. To run the Rasa Chatbot in terminal, run:
 
 ```
 rasa run actions & rasa shell
 ```
+
+Choice #2. To run the Rasa Chatbot in browser, run:
+```
+rasa run -m models --enable-api --cors "*" --debug
+```
+In another terminal in the save directory and virtual environment, run:
+```
+rasa run actions
+```
+click on the index.html
 
 
 ## Details of the Implementation
