@@ -5,8 +5,8 @@ Your personal assistant in finding the optimum wine.
 1. [Motivations](README.md#motivations)
 2. [Overview of the Project](README.md#overview-of-the-project)
 3. [Repo Structure](README.md#repo-structure)
-4. [Requirements](README.md#requirements)
-5. [Setup](README.md#setup)
+4. [Setup](README.md#setup)
+5. [Requirements](README.md#requirements)
 6. [Run A Train and Test](README.md#run-a-train-and-test)
 10. [Details of the Implementation](README.md#details-of-the-implementation)
 
