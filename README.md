@@ -99,7 +99,7 @@ On Windows:
 .\env\Scripts\activate
 ```
 ## Requirements
-Install the dependencies for the project(this may take a while):
+Install the dependencies for the project (this may take a while):
 
 ```
 pip3 install -r requirements.txt
