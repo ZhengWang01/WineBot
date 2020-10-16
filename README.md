@@ -24,7 +24,7 @@ According to an on-line survey, 44% of U.S. consumers prefer chat-bots to humans
 
 ## Overview of the Project
 
-In this project, I utilized the Rasa open source chatbot. I trained Latent Sentiment Analysis models that takes the preprocessed customer query, and give corresponding recommendation based on what the customer need.
+In this project, I utilized the [Rasa](https://rasa.com/) open source chatbot. I trained Latent Sentiment Analysis models that takes the preprocessed customer query, and give corresponding recommendation based on what the customer need.
 
 The deliverable of the project is a Web App that allows user to tell the chatbot what they need, and get the recommendation on which wine they should buy.
 
