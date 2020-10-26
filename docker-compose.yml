@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  rasa:
+    image: rasa/rasa:1.10.14-full
+    ports:
+      - 5005:5005
+    volumes:
+      - ./:/app
+    command:
+      - run
+  app:
+    image: kyowawa/winebot18:new_actions
+    expose: 5055
