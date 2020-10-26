@@ -1,5 +1,6 @@
 # WineBot
 Your personal assistant in finding the optimum wine.
+Please try it ou here [www.winebot.xyz](http://winebot.xyz/guest/conversations/production/b72f6317e7de4a2496285e4484c39056)
 
 # Table of Contents
 This is a wine recommendation chatbot for specific business use that translate taxonomy data into an interactive dialog.
