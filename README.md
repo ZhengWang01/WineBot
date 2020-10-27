@@ -74,31 +74,19 @@ clone the project:
 ```
 git clone https://github.com/ZhengWang01/WineBot.git
 ```
-Get into the main folder:
+Get into the project directory:
 ```
 cd WineBot
 ```
+Run the below command within the project directory(this will install the dependencies):
+```
+docker-compose up --build
+```
+Check whether the services are up and running using below command:
+```
+docker ps -a
+```
 
-Creating a virtual environment for the project
-On macOS and Linux:
-
-```
-python3 -m venv env
-```
-On Windows:
-```
-py -m venv env
-```
-Activating a virtual environment
-On macOS and Linux:
-```
-source env/bin/activate
-```
-On Windows:
-
-```
-.\env\Scripts\activate
-```
 ## Requirements
 Install the dependencies for the project (this may take a while):
 
