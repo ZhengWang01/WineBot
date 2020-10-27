@@ -1,3 +1,4 @@
+  
 # Extend the official Rasa SDK image
 FROM rasa/rasa-sdk:latest
 
@@ -23,6 +24,4 @@ RUN pip install -r requirements-actions.txt
 COPY ./actions /app/actions
 
 # By best practices, don't run the code with root user
-# USER 1001
-
-
+USER 1000

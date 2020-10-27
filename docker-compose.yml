@@ -1,4 +1,4 @@
-version: '3.0'
+version: '2.0'
 services:
   rasa:
     image: rasa/rasa:1.10.14-full
@@ -9,5 +9,5 @@ services:
     command:
       - run
   app:
-    image: kyowawa/winebot18:new_actions
-    expose: 5055
+    image: kyowawa/winebot19:new_actions
+    expose: [5055]
