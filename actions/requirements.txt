@@ -131,9 +131,9 @@ pytz==2019.3
 PyWavelets==1.1.1
 PyYAML==5.3.1
 questionary==1.5.2
-#rasa==1.10.14
-#rasa-nlu==0.15.1
-#rasa-sdk==1.10.3
+# rasa==1.10.14
+# rasa-nlu==0.15.1
+# rasa-sdk==1.10.3
 redis==3.5.3
 regex==2020.6.8
 requests==2.24.0
@@ -184,7 +184,7 @@ Twisted==20.3.0
 typing==3.7.4.3
 typing-extensions==3.7.4.3
 tzlocal==2.1
-ujson==1.35
+# ujson==1.35
 uritemplate==3.0.1
 urllib3==1.25.10
 uvloop==0.14.0

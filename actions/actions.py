@@ -1,18 +1,8 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/core/actions/#custom-actions/
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-# from src.information_retrieval_model import Wine_Information_Retrieval_Model as wir
 
 import pandas as pd
 import numpy as np
@@ -47,16 +37,13 @@ class ActionGetWine(Action):
 
     def run(self, dispatcher, tracker, domain):
         query = tracker.latest_message.get("text")
-        # dispatcher.utter_message(query)
         message = query
         recs = self.query_similar_wines(message, 5)
         print(recs)
         recom = self.view_recommendations(recs)
-        # print(recom)
         recomstr = '\n'.join([str(i) for i in recom])
         dispatcher.utter_message(recomstr)
 
-        # return []
 
     def __init__(self):
         self.dv = Doc2Vec.load("./models/doc2vec_model")
@@ -182,18 +169,11 @@ class ActionGetWine(Action):
         return similar_wines.head(n)
 
     def view_recommendations(self, recs):
-
-        # fig, axes = plt.subplots(nrows=1, ncols=5, figsize=(15,10))
-        # ax = axes.ravel()
         titles = []
         for i in range(len(recs)):
             single_title = recs.index.tolist()[i]
             titles.append(single_title)
-            
-          # single_wine = self.df.query('title==@single_title')
-          # name = single_wine.title.values[0]
-          #   # descriptions = single_wine.description.values[0]
-          # title = "{} \n Notes: {}".format(name)
+
         return titles
 
     
