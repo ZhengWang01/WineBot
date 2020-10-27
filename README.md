@@ -69,10 +69,10 @@ The project is deployed on [Rasa X](https://rasa.com/docs/rasa-x/), where you ca
 │   ├── data   
 │   │   ├── nlu.md         # NLU training data stores structured information about user messages
 │   │   ├── stories.md     # Stories are a type of training data used to train the assistant's dialogue management model      
-│   ├── Dockerfile
+│   ├── Dockerfile         # A text document that contains all the commands a user could call on the command line to assemble an image.
 │   ├── config.yml         # The configuration file defines the components and policies that the model will use to make predictions based on user input
 │   ├── credentials.yml    # To connect to most channels, you will need to add some credentials (e.g. an API token)
-│   ├── docker-compose.yml 
+│   ├── docker-compose.yml # Compose is a tool for defining and running multi-container Docker applications.
 │   ├── domain.yml         # The domain defines the universe in which the assistant operates. It specifies the intents, entities, slots, responses, forms, and actions the bot should know about 
 │   ├── endpoints.yml      # Contains the different endpoints your bot can use.
 │   ├── run_model.ipynb    # WineBot demo
