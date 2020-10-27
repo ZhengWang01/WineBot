@@ -68,8 +68,7 @@ The project is deployed on [Rasa X](https://rasa.com/docs/rasa-x/), where you ca
 │   │   ├── tfidf_model.pkl
 │   ├── data   
 │   │   ├── nlu.md         # NLU training data stores structured information about user messages
-│   │   ├── stories.md     # Stories are a type of training data used to train the assistant's dialogue management model
-│   │   ├── utils.py       
+│   │   ├── stories.md     # Stories are a type of training data used to train the assistant's dialogue management model      
 │   ├── Dockerfile
 │   ├── config.yml         # The configuration file defines the components and policies that the model will use to make predictions based on user input
 │   ├── credentials.yml    # To connect to most channels, you will need to add some credentials (e.g. an API token)
