@@ -1,33 +1,60 @@
 # WineBot
 Your personal assistant in finding the optimum wine.
-Please try it ou here [www.winebot.xyz](http://winebot.xyz/guest/conversations/production/b72f6317e7de4a2496285e4484c39056)
 
 ## What is WineBot?
 Winebot is a wine recommendation chatbot. It is a combination of a recommender and a chatbot, where the recommender is built by using Doc2Vec and Latent Semantic Analysis(LSA) and the chatbot is built by utilizing the [Rasa](https://rasa.com/) Open Source Chatbot.
 
 ## Table of Contents
-  * [Installation](#installation)
+  * [Setup](#installation)
+    + Setup with Docker(#Setup with Docker – *portable and stable*)
+    + Setup with Python virtual environment(#Setup with Python virtual environment – *ultralight*)
+  * [Run the Project](#Run the Project)
+  * [Explore the Project](#Explore the Project)
   * [Usage](#usage)
   * [Results](#results)
 
 
 
-## Installation
+## Setup
 
-clone into directory:
+Clone this repo with
+
 ```
 git clone https://github.com/ZhengWang01/WineBot.git
-cd WineBot
 ```
 
-Run the below command within the project directory (this will install the dependencies):
+### Setup with Docker – *portable and stable*
+**The recommended way to run this project is by installing Docker and building and running an image**.  This process manages libraries, the python runtime environment, and dependences; it also manages environment variables nicely. This maximizes stability and portability.
+
+- First, visit https://www.docker.com to install the Docker platform (e.g. Docker Desktop) on your machine.
+
+- To build and run your container, run the following in your command shell.
+
 ```
+cd <project_path>
 docker-compose up --build
 ```
-Check whether the services are up and running using below command:
+
+- Check whether the services are up and running using below command:
 ```
 docker ps -a
 ```
+### Setup with Python virtual environment – *ultralight*
+Run the following command
+```
+cd <project_path>
+python -m venv <environment_name>
+source <environment_name>/bin/activate
+pip install --upgrade pip
+cd actions
+pip install -r requirements-actions.txt 
+```
+## Running the Project
+Talk to Winebot here [www.winebot.xyz](http://www.winebot.xyz/guest/conversations/production/b72f6317e7de4a2496285e4484c39056)
+
+## Explore the Project
+The project is deployed on [Rasa X](https://rasa.com/docs/rasa-x/), where you can build, improve, and deploy AI Assistants that are powered by the Rasa framework. Try and explore it here [www.winebot.xyz/login](http://winebot.xyz/login), with the passcode ```rasarasa```
+
 
 ## Usage
 ```
