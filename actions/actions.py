@@ -41,12 +41,12 @@ class ActionGetWine(Action):
 
 
     def __init__(self):
-        self.dv = Doc2Vec.load("doc2vec_model")
-        self.tf = pickle.load(open("tfidf_model.pkl", "rb"))
-        self.svd = pickle.load(open("svd_model.pkl", "rb"))
-        self.svd_feature_matrix = pickle.load(open("lsa_embeddings.pkl", "rb"))
-        self.doctovec_feature_matrix = pickle.load(open("doctovec_embeddings.pkl", "rb"))
-        self.df = df = pd.read_pickle("wine_data.pkl")
+        self.dv = Doc2Vec.load("./actions/doc2vec_model")
+        self.tf = pickle.load(open("./actions/tfidf_model.pkl", "rb"))
+        self.svd = pickle.load(open("./actions/svd_model.pkl", "rb"))
+        self.svd_feature_matrix = pickle.load(open("./actions/lsa_embeddings.pkl", "rb"))
+        self.doctovec_feature_matrix = pickle.load(open("./actions/doctovec_embeddings.pkl", "rb"))
+        self.df = df = pd.read_pickle("./actions/wine_data.pkl")
         self.hal = sia()
 
 
