@@ -1,8 +1,8 @@
 # WineBot
-Your personal assistant in finding the optimum wine.
+Your personal assistant in finding the optimum wine
 
 ## What is WineBot?
-Winebot is a wine recommendation chatbot. It is a combination of a recommender and a chatbot, where the recommender is built by using Doc2Vec and Latent Semantic Analysis(LSA) and the chatbot is built by utilizing the [Rasa](https://rasa.com/) Open Source Chatbot.
+Winebot is a wine recommendation chatbot. It is a combination of a recommender and a chatbot, where the recommender is built by using Doc2Vec and Latent Semantic Analysis(LSA) and the chatbot is built by utilizing the [Rasa](https://rasa.com/) Open Source Chatbot
 
 ## Table of Contents
   * [Setup](#Setup)
