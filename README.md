@@ -6,8 +6,8 @@ Winebot is a wine recommendation chatbot. It is a combination of a recommender a
 
 ## Table of Contents
   * [Setup](#installation)
-    + Setup with Docker(#Setup with Docker – *portable and stable*)
-    + Setup with Python virtual environment(#Setup with Python virtual environment – *ultralight*)
+    + [Setup with Docker](#Setup with Docker – *portable and stable*)
+    + [Setup with Python virtual environment](#Setup with Python virtual environment – *ultralight*)
   * [Run the Project](#Run the Project)
   * [Explore the Project](#Explore the Project)
   * [Usage](#usage)
@@ -49,7 +49,7 @@ pip install --upgrade pip
 cd actions
 pip install -r requirements-actions.txt 
 ```
-## Running the Project
+## Run the Project
 Talk to Winebot here [www.winebot.xyz](http://www.winebot.xyz/guest/conversations/production/b72f6317e7de4a2496285e4484c39056)
 
 ## Explore the Project
