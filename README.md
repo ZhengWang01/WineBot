@@ -5,11 +5,11 @@ Your personal assistant in finding the optimum wine.
 Winebot is a wine recommendation chatbot. It is a combination of a recommender and a chatbot, where the recommender is built by using Doc2Vec and Latent Semantic Analysis(LSA) and the chatbot is built by utilizing the [Rasa](https://rasa.com/) Open Source Chatbot.
 
 ## Table of Contents
-  * [Setup](#installation)
-    + [Setup with Docker](#Setup with Docker – *portable and stable*)
-    + [Setup with Python virtual environment](#Setup with Python virtual environment – *ultralight*)
-  * [Run the Project](#Run the Project)
-  * [Explore the Project](#Explore the Project)
+  * [Setup](#Setup)
+    + [Setup with Docker](#Setup-with-Docker)
+    + [Setup with Python virtual environment](#Setup-with-Python-virtual-environment)
+  * [Run the Project](#Run-the-Project)
+  * [Explore the Project](#Explore-the-Project)
   * [Usage](#usage)
   * [Results](#results)
 
@@ -23,7 +23,7 @@ Clone this repo with
 git clone https://github.com/ZhengWang01/WineBot.git
 ```
 
-### Setup with Docker – *portable and stable*
+### Setup with Docker
 **The recommended way to run this project is by installing Docker and building and running an image**.  This process manages libraries, the python runtime environment, and dependences; it also manages environment variables nicely. This maximizes stability and portability.
 
 - First, visit https://www.docker.com to install the Docker platform (e.g. Docker Desktop) on your machine.
@@ -39,7 +39,7 @@ docker-compose up --build
 ```
 docker ps -a
 ```
-### Setup with Python virtual environment – *ultralight*
+### Setup with Python virtual environment
 Run the following command
 ```
 cd <project_path>
