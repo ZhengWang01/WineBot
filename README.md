@@ -59,23 +59,23 @@ The project is deployed on [Rasa X](https://rasa.com/docs/rasa-x/), where you ca
 ## Usage
 ```
 ├── WineBot
-│   ├── actions            # custom actions files for the rasa chatbot
+│   ├── actions            # Custom actions files for the rasa chatbot
 │   │   ├── actions.py
-│   │   ├── doc2vec_model
+│   │   ├── doc2vec_model  # The models from training the data 
 │   │   ├── doc2vec_embeddings.pkl
 │   │   ├── lsa_embeddings.pkl
 │   │   ├── svd_model.pkl
 │   │   ├── tfidf_model.pkl
 │   ├── data   
-│   │   ├── nlu.md
-│   │   ├── stories.md
+│   │   ├── nlu.md         # NLU training data stores structured information about user messages
+│   │   ├── stories.md     # Stories are a type of training data used to train the assistant's dialogue management model
 │   │   ├── utils.py       
 │   ├── Dockerfile
-│   ├── config.yml
-│   ├── credentials.yml
-│   ├── docker-compose.yml
-│   ├── domain.yml
-│   ├── endpoints.yml
+│   ├── config.yml         # The configuration file defines the components and policies that the model will use to make predictions based on user input
+│   ├── credentials.yml    # To connect to most channels, you will need to add some credentials (e.g. an API token)
+│   ├── docker-compose.yml 
+│   ├── domain.yml         # The domain defines the universe in which the assistant operates. It specifies the intents, entities, slots, responses, forms, and actions the bot should know about 
+│   ├── endpoints.yml      # Contains the different endpoints your bot can use.
 │   ├── run_model.ipynb    # WineBot demo
 │   ├── train_model.ipynb  # WineBot model training
 ```
